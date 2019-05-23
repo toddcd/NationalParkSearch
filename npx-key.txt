@@ -1,0 +1,4 @@
+pWemLF6yK0aYJBIeI5A8aJyMKdablajyg0gWz3AC
+
+example:
+https://developer.nps.gov/api/v1/parks?parkCode=acad&api_key=pWemLF6yK0aYJBIeI5A8aJyMKdablajyg0gWz3AC
