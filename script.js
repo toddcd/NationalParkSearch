@@ -39,10 +39,12 @@ function displayResults(responseJson) {
 };
 
 function getNationalParks(query, limit=10) {
+    reset();
+
     const params = {
         stateCode: query,
         limit: limit,
-        fields: 'addresses',
+        fields: `addresses`,
         api_key: apiKey
     };
 
@@ -71,6 +73,11 @@ function watchForm() {
     const maxResults = $('#js-max-results').val();
     getNationalParks(stateList, maxResults);
 });
+}
+
+function reset(){
+    $('#results').addClass('hidden');
+    $('#js-error-message').text('');
 }
 
 $(watchForm);
